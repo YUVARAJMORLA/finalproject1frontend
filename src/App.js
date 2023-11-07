@@ -2,7 +2,7 @@ import { BrowserRouter, Routes , Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import ProtectedPage from "./components/ProtectedPage";
+// import ProtectedPage from "./components/ProtectedPage";
 
 
 
@@ -11,7 +11,8 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element= {<ProtectedPage><Home /></ProtectedPage>} />
+        {/* / <Route path="/" element= {<ProtectedPage><Home /></ProtectedPage>} />  */}
+          <Route path="/" element= {<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>
